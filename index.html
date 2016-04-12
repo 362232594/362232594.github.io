@@ -3,8 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		header{
+
+			position: relative;
+			/*相对定位*/
+		}
+
+		div{
+			width: 100px;
+			height: 100px;
+			line-height:100px;
+			border:1px solid red;
+			float:left;
+			margin-left:10px;
+			text-align:center;
+		}
+		.box1{
+			margin: 60px;
+			position: absolute;
+			background-color:pink;
+			/*绝对定位  盒子本身的位置也没了*/
+		}
+		.box2{
+			margin-left: 80px;
+			position: absolute;
+			background-color:blue;
+
+		}
+		.box3{
+
+			position: absolute;
+			margin-left: 00px;
+			background-color:orange;
+
+		}
+	</style>
 </head>
 <body>
-	<p>测试</p>
+	<header>
+		<div class="box1">盒子一</div>
+		<div class="box2">盒子二</div>
+		<div class="box3">盒子三</div>
+	</header>
+	
+
 </body>
 </html>
