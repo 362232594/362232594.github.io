@@ -47,8 +47,17 @@ $(document).ready(function () {
         clearInterval(timer);
     });
     $(".lbt-zhfq").mouseleave(function () {
-        timer ;
-        // console.log(timer)
+       	 timer = setInterval(function () {
+        if (index < $(".circle").children().length - 1) {
+            index++;
+        } else {
+            index = 0;
+        }
+        $(".circle>span").css("background", "#A2A2A2");
+        $($(".circle>span")[index]).css("background", "white");
+
+        $(".lbt-zhfq>div:eq(" + index + ")").fadeIn(1000).siblings("div").hide().stop();
+    }, 3000);
     });
     timer = setInterval(function () {
         if (index < $(".circle").children().length - 1) {
