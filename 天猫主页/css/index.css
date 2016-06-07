@@ -5,51 +5,41 @@
     z-index: 10;
     cursor: pointer;
 }
-
 .lbt {
     width: 1261px;
     float: left;
     position: relative;
 }
-
 .bj .lbt-zhfq div {
-
     width: 1249px;
     margin-left: -44px;
     position: relative;
 }
-
 .bj .lbt .lbtq {
     position: absolute;
-
+    text-align: center;
     background-color: #FF291E;
     z-index: 999;
 }
-
 .bj .lbt .lbtw {
     position: absolute;
     padding-left: 100px;
-
     background-color: #E8E8E8
 }
-
 .bj .lbt .lbte {
     position: absolute;
 
     background-color: #110F1D;
 }
 .bj .lbt .bjj{
-    width: 1349px;
+    width: 105%;
     box-sizing: border-box;
-    /*padding-left: 40px;*/
 }
-
 .bj .lbt .lbtr {
     position: absolute;
 
     background-color: #E8E8E8;
 }
-
 .bj .lbt .lbtt {
     position: absolute;
 
